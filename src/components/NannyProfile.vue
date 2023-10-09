@@ -55,6 +55,7 @@ export default {
   components: {
     TagsSection,
     ProfileImage,
+   
   },
 };
 </script>
