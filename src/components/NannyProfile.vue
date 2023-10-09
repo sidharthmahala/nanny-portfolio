@@ -2,8 +2,7 @@
   <div class="bg-white shadow-md rounded-lg p-6 flex flex-col md:flex-row ">
     <!-- Left Part: Profile Picture -->
     <div class="md:w-1/4 p-4 flex justify-center items-start">
-      <img :src="profileImage" :alt="name" class="w-209 h-209 rounded-full " />
-      
+      <ProfileImage :name="name" :profileImage="profileImage" />
     </div>
 
     <!-- Right Part: Profile Information -->
@@ -44,6 +43,7 @@
 <script>
 // Import your TagsSection component
 import TagsSection from "./TagsSections.vue";
+import ProfileImage from "./ProfileImage.vue";
 export default {
   props: {
     name: String,
@@ -54,6 +54,7 @@ export default {
   },
   components: {
     TagsSection,
+    ProfileImage,
   },
 };
 </script>
